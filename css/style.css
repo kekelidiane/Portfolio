@@ -489,13 +489,126 @@ section{
 .services-box .services-content{
     position: relative;
     border: .2rem solid #00abf0;
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
 }
 
+.services-box .services-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #0c283b;
+    z-index: -1;
+    transition: .5s;
+}
 
+.services-box .services-content:hover::before{
+    width: 100%;
+}
 
+.services-content .prorgess{
+    padding: 1rem 0;
+}
 
+.services-content .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
 
+.services-content .progress h3 span{
+    color: #fff;
+}
 
+.services-content .progress .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid #00abf0;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.services-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: #00abf0;
+}
+
+.services-column:nth-child(1) .services-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.services-column:nth-child(1) .services-content .progress:nth-child(2) .bar span{
+    width: 50%;
+}
+
+.services-column:nth-child(2) .services-content .progress:nth-child(1) .bar span{
+    width: 50%;
+}
+
+.services-column:nth-child(2) .services-content .progress:nth-child(2) .bar span{
+    width: 50%;
+}
+
+.services-column:nth-child(3) .services-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+ 
+.services-column:nth-child(3) .services-content .progress:nth-child(2) .bar span{
+    width: 70%;
+}
+
+.services-column:nth-child(4) .services-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.services-column:nth-child(4) .services-content .progress:nth-child(2) .bar span{
+    width: 90%;
+}
+
+.services-column:nth-child(4) .services-content .progress:nth-child(3) .bar span{
+    width: 50%;
+}
+
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field{
+    position: relative;
+    width: 50%;
+    margin: .8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #081b29;
+    background: transparent;
+}
 
 /*keyframes animations*/
 @keyframes showRight{
