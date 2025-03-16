@@ -10,8 +10,8 @@ html{
 }
 
 body{
-    background-color: #081b29;
-    color: #ededed;
+    background-color: #e7e4e4;
+    color: #000000;
 }
 
 .header{
@@ -20,7 +20,7 @@ body{
     left: 0;
     padding: 2rem 9%;
     width: 100%;
-    background-color: transparent;
+    background-color: rgb(24, 19, 19);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,7 @@ body{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: rgb(24, 19, 19);
     animation: showRight 1s ease forwards;
     animation-delay: 0.5s;
 }
@@ -55,6 +55,19 @@ body{
     margin-left: 3.5rem;
     transition: .3s;
 }
+
+/* .navbar a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120%;
+    height: 100%;
+    background: rgb(24, 19, 19);
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 100;
+} */
 
 .navbar a:hover, 
 .navbar a.active{
@@ -72,7 +85,8 @@ section{
 
 .home{
     height: 100vh;
-    background: url('img/moi.jpg') no-repeat;
+    background: url('img/moi.png') no-repeat;
+    background-color: #e7e4e4;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -86,6 +100,7 @@ section{
 }
 
 .home-content h1{
+    color: rgb(157, 60, 12);
     position: relative;
     font-size: 40px;
     font-weight: 700;
@@ -99,7 +114,7 @@ section{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #e7e4e4;
     animation: showRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -119,12 +134,13 @@ section{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #e7e4e4;
     animation: showRight 1s ease forwards;
     animation-delay: 1.4s;
 }
 
 .home-content p {
+    color: black;
     position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
@@ -137,7 +153,7 @@ section{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #e7e4e4;
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
 }
@@ -157,7 +173,7 @@ section{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #e7e4e4;
     animation: showRight 1s ease forwards;
     animation-delay: 1.8s;
     z-index: 2;
@@ -184,37 +200,14 @@ section{
     transition: .5s;
 }
 
-.btn-box a:hover{
+.btn-box a:nth-child(1){
+    background: transparent;
     color: #00abf0;
 }
 
 .btn-box a:nth-child(2){
     background: transparent;
     color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover{
-    color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before{
-    background: #00abf0;
-}
-
-.btn-box a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    background: #081b29;
-    transition: .3s;
-}
-
-.btn-box a:hover::before{
-    width: 100%;
 }
 
 .home-sci{
@@ -232,7 +225,7 @@ section{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: transparent;
     animation: showRight 1s ease forwards;
     animation-delay: 2.2s;
     z-index: 2;
@@ -256,10 +249,6 @@ section{
     transition: .3s;
 }
 
-.home-sci a:hover{
-    color: #081b29;
-}
-
 .home-sci a::before{
     content: '';
     position: absolute;
@@ -267,7 +256,7 @@ section{
     left: 0;
     width: 0;
     height: 100%;
-    background: #00abf0;
+    background: #e7e4e4;
     z-index: -1;
     transition: .3s;
     
@@ -284,25 +273,25 @@ section{
     width: 400px;
     height: 100%;
     background: transparent;
-    border: 2px solid red;
+    border: 2px solid #00abf0;
     animation: manipActiveHover .1s forwards;
     animation-delay: 4s;
     pointer-events: none;
 }
 
 .home-imgHover:hover{
-    background: #081b29;
+    background: #e7e4e4;
     opacity: -8;
 }
 
 .home-imgHover::after{
-    content: '';
+    content: 'IMG';
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 120%;
-    height: 100%;
-    background: #081b29;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: #e7e4e4;
     animation: showRight 1s ease forwards;
     animation-delay: 3s;
     z-index: 100;
@@ -314,8 +303,8 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: #0c283b;
     padding-bottom: 4rem;
+    background-color: #dcdad9;
 }
 
 .heading{
@@ -374,7 +363,7 @@ section{
 }
 
 .btn-box .btns a::before{
-    background: #081b29;
+    background: #e7e4e4;
 }
 
 .education{
@@ -417,7 +406,7 @@ section{
     left: -1.1rem;
     width: 2rem;
     height: 2rem;
-    background: #00abf0;
+    background: #e7e4e4;
     border-radius: 50%;
 }
 
@@ -437,7 +426,7 @@ section{
     left: 0;
     width: 0;
     height: 100%;
-    background: #0c283b;
+    background: #e7e4e4;
     z-index: -1;
     transition: .5s;
 }
@@ -468,7 +457,7 @@ section{
 .services{
     min-height: auto;
     padding-bottom: 7rem;
-    background: #081b29;
+    background-color: #dcdad9;
 }
 
 .services .services-row{
@@ -502,7 +491,7 @@ section{
     left: 0;
     width: 0;
     height: 100%;
-    background: #0c283b;
+    background: #e7e4e4;
     z-index: -1;
     transition: .5s;
 }

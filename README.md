@@ -1,6 +1,6 @@
-# Portfolio
+# Portfolio 🌟
 
-Portfolio développé en JavaScript, HTML, et CSS
+Portfolio développé en JavaScript, HTML, et CSS à l'aide d'un tutoriel ytb
 
 ## Description
 
@@ -28,4 +28,4 @@ Si tu souhaites cloner ce projet et l'essayer localement, voici les étapes à s
 3. Ouvre le fichier index.html dans ton navigateur pour voir ton portfolio.
 
 
-ARIGATO !!!
+# **_ARIGATO_**
