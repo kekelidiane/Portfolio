@@ -28,4 +28,4 @@ Si tu souhaites cloner ce projet et l'essayer localement, voici les étapes à s
 3. Ouvre le fichier index.html dans ton navigateur pour voir ton portfolio.
 
 
-# **_ARIGATO_**
+# *_ARIGATO_*
