@@ -20,7 +20,7 @@ jobs:
         echo "Date: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> version.txt
 
     - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+      uses: SamKirkland/FTP-Deploy-Action@v4
       with:
         server: ${{ secrets.FTP_HOST }}
         username: ${{ secrets.FTP_USERNAME }}
