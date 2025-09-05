@@ -1,6 +1,6 @@
-# Portfolio 🌟
+# Mon portfolio 🌟
 
-Portfolio développé en JavaScript, HTML, et CSS à l'aide d'un tutoriel ytb
+Ce projet a été développé en HTML, CSS et JavaScript à l'aide d'un tutoriel ytb
 
 ## Description
 
@@ -11,7 +11,6 @@ Conçu pour mettre en avant les compétences techniques et créatives. Il prése
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- **Flexbox / Grid**
 - **Git**
 
 ## Installation
@@ -21,7 +20,7 @@ Si tu souhaites cloner ce projet et l'essayer localement, voici les étapes à s
 1. Clone ce dépôt sur ton ordinateur :
 
    ```bash
-   git clone https://github.com/ton-utilisateur/portfolio.git
+   git clone https://github.com/kekelidiane/portfolio.git
 
 2. Ouvre le dossier du projet dans ton éditeur de texte.
 
