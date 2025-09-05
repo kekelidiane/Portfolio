@@ -15,7 +15,7 @@ jobs:
 
     - name: Generate version file
       run: |
-        echo "App: vicetogo.karuidesu.org" > version.txt
+        echo "App: karuidesu.org" > version.txt
         echo "Commit: $GITHUB_SHA" >> version.txt
         echo "Date: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> version.txt
 
