@@ -13,6 +13,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Generate version file
+      run: |
+        echo "App: vicetogo.karuidesu.org" > version.txt
+        echo "Commit: $GITHUB_SHA" >> version.txt
+        echo "Date: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> version.txt
+
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@v4.4.0
       with:
