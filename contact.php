@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST["message"]);
 
     // Adresse qui recevra les mails
-    $to = "lucedia@gmail.com"; 
+    $to = "lucedia09@gmail.com"; 
 
     // Sujet du mail
     $subject = "Nouveau message depuis ton portfolio : $objet";
